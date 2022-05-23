@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A177017D-DDFE-4D9F-9F5B-92B9323C7AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInjector", "src\ZapInjector\ZapInjector.csproj", "{EC269D52-FA78-4C5E-A375-6976AE7E2E6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{B675F74B-8282-4EDF-87CB-79973D304155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInjector.Examples.Abstractions", "examples\ZapInjector.Examples.Abstractions\ZapInjector.Examples.Abstractions.csproj", "{1B5AE2F0-9F5D-4E5D-A0CA-C02B45A8F8D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInjector.Examples.Implementations", "examples\ZapInjector.Examples.Implementations\ZapInjector.Examples.Implementations.csproj", "{56D0E604-5A84-474D-81FB-EC7DD041DCAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInjector.Examples.Main", "examples\ZapInjector.Examples.Main\ZapInjector.Examples.Main.csproj", "{D39C66E1-4179-4831-B545-F646566B19F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4ABE382F-CC7D-42F7-811D-D4188B79B837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInjector.Test", "test\ZapInjector.Test\ZapInjector.Test.csproj", "{52732D36-F8B5-4FC6-BD17-F53D9937849C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC269D52-FA78-4C5E-A375-6976AE7E2E6A} = {A177017D-DDFE-4D9F-9F5B-92B9323C7AFE}
+		{1B5AE2F0-9F5D-4E5D-A0CA-C02B45A8F8D2} = {B675F74B-8282-4EDF-87CB-79973D304155}
+		{56D0E604-5A84-474D-81FB-EC7DD041DCAF} = {B675F74B-8282-4EDF-87CB-79973D304155}
+		{D39C66E1-4179-4831-B545-F646566B19F3} = {B675F74B-8282-4EDF-87CB-79973D304155}
+		{52732D36-F8B5-4FC6-BD17-F53D9937849C} = {4ABE382F-CC7D-42F7-811D-D4188B79B837}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC269D52-FA78-4C5E-A375-6976AE7E2E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC269D52-FA78-4C5E-A375-6976AE7E2E6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC269D52-FA78-4C5E-A375-6976AE7E2E6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC269D52-FA78-4C5E-A375-6976AE7E2E6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B5AE2F0-9F5D-4E5D-A0CA-C02B45A8F8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5AE2F0-9F5D-4E5D-A0CA-C02B45A8F8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5AE2F0-9F5D-4E5D-A0CA-C02B45A8F8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5AE2F0-9F5D-4E5D-A0CA-C02B45A8F8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D0E604-5A84-474D-81FB-EC7DD041DCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D0E604-5A84-474D-81FB-EC7DD041DCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D0E604-5A84-474D-81FB-EC7DD041DCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D0E604-5A84-474D-81FB-EC7DD041DCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39C66E1-4179-4831-B545-F646566B19F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39C66E1-4179-4831-B545-F646566B19F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39C66E1-4179-4831-B545-F646566B19F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39C66E1-4179-4831-B545-F646566B19F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52732D36-F8B5-4FC6-BD17-F53D9937849C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52732D36-F8B5-4FC6-BD17-F53D9937849C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52732D36-F8B5-4FC6-BD17-F53D9937849C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52732D36-F8B5-4FC6-BD17-F53D9937849C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

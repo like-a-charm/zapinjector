@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\ZapInjector\ZapInjector.csproj" />
+      <ProjectReference Include="..\ZapInjector.Examples.Abstractions\ZapInjector.Examples.Abstractions.csproj" />
+      <ProjectReference Include="..\ZapInjector.Examples.Implementations\ZapInjector.Examples.Implementations.csproj" />
+    </ItemGroup>
+
+</Project>
