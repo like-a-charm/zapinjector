@@ -29,18 +29,18 @@ stages:
               installationPath: $(Agent.ToolsDirectory)/dotnet
               
           - task: Bash@3
-              displayName: Install coverlet
-              inputs:
-                targetType: 'inline'
-                script: |
-                  dotnet tool install --global coverlet.console --version 3.0.3
+            displayName: Install coverlet
+            inputs:
+              targetType: 'inline'
+              script: |
+                dotnet tool install --global coverlet.console --version 3.0.3
                   
           - task: Bash@3
-              displayName: Install report generator
-              inputs:
-                targetType: 'inline'
-                script: |
-                  dotnet tool install --global dotnet-reportgenerator-globaltool
+            displayName: Install report generator
+            inputs:
+              targetType: 'inline'
+              script: |
+                dotnet tool install --global dotnet-reportgenerator-globaltool
 
           - task: Bash@3
             displayName: Build solution
