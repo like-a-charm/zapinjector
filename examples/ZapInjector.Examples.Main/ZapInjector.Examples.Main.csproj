@@ -9,7 +9,19 @@
     <ItemGroup>
       <ProjectReference Include="..\..\src\ZapInjector\ZapInjector.csproj" />
       <ProjectReference Include="..\ZapInjector.Examples.Abstractions\ZapInjector.Examples.Abstractions.csproj" />
+      <ProjectReference Include="..\ZapInjector.Examples.ImplementationsTwo\ZapInjector.Examples.ImplementationsTwo.csproj" />
       <ProjectReference Include="..\ZapInjector.Examples.Implementations\ZapInjector.Examples.Implementations.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NetEscapades.Configuration.Yaml" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="appsettings.yaml" />
+      <Content Include="appsettings.yaml">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

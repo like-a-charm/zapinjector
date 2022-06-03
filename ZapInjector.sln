@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4ABE382F-C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInjector.Test", "test\ZapInjector.Test\ZapInjector.Test.csproj", "{52732D36-F8B5-4FC6-BD17-F53D9937849C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZapInjector.Examples.ImplementationsTwo", "examples\ZapInjector.Examples.ImplementationsTwo\ZapInjector.Examples.ImplementationsTwo.csproj", "{4F920663-A00C-4394-86F2-4218B3E81311}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,7 @@ Global
 		{56D0E604-5A84-474D-81FB-EC7DD041DCAF} = {B675F74B-8282-4EDF-87CB-79973D304155}
 		{D39C66E1-4179-4831-B545-F646566B19F3} = {B675F74B-8282-4EDF-87CB-79973D304155}
 		{52732D36-F8B5-4FC6-BD17-F53D9937849C} = {4ABE382F-CC7D-42F7-811D-D4188B79B837}
+		{4F920663-A00C-4394-86F2-4218B3E81311} = {B675F74B-8282-4EDF-87CB-79973D304155}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EC269D52-FA78-4C5E-A375-6976AE7E2E6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -55,5 +58,9 @@ Global
 		{52732D36-F8B5-4FC6-BD17-F53D9937849C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52732D36-F8B5-4FC6-BD17-F53D9937849C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52732D36-F8B5-4FC6-BD17-F53D9937849C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F920663-A00C-4394-86F2-4218B3E81311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F920663-A00C-4394-86F2-4218B3E81311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F920663-A00C-4394-86F2-4218B3E81311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F920663-A00C-4394-86F2-4218B3E81311}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

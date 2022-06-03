@@ -25,3 +25,13 @@ It provides a way to load all the services defined into a set of assemblies basi
 ```
 services.LoadFromConfiguration(Configuration);
 ```
+
+## Run Unit Tests
+
+To execute the unit tests execute the following
+
+```
+dotnet test --settings settings/coverlet.runsettings --logger trx --results-directory "test-results"
+reportgenerator "-reports:test-results/**/*.opencover.xml" "-targetdir:test-report"
+```
+The reports will be available in the test-result folder

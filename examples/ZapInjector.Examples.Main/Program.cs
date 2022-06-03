@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ZapInjector.Examples.Main;
 
 var builder = new ConfigurationBuilder()
-    .AddJsonFile("appsettings.json")
+    .AddYamlFile("appsettings.yaml")
     .AddEnvironmentVariables();
 
 var configuration = builder.Build();

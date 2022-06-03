@@ -1,6 +1,8 @@
 using System;
 using Microsoft.Extensions.DependencyInjection;
 using ZapInjector.Configurations;
+using ZapInjector.ExplicitServicesDeclarationSettings;
+using ZapInjector.ExplicitServicesDeclarationSettings.Validators;
 using ZapInjector.Strategies;
 using ZapInjector.Strategies.Conventions;
 using ZapInjector.Utils;
@@ -19,6 +21,9 @@ namespace ZapInjector
             services
                 .AddSingleton<ILoadAllServicesFromAssembliesConventionFactory,
                     LoadAllServicesFromAssembliesConventionFactory>();
+            services.AddSingleton<IExplicitServiceDeclarationSettingsVisitorFactory, ExplicitServiceDeclarationSettingsVisitorFactory>();
+            services.AddSingleton(ValueSettingsValidator.Instance);
+            services.AddSingleton(ServiceDescriptionSettingsValidator.Instance);
             return services.BuildServiceProvider();
         }
     }
