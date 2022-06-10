@@ -131,6 +131,33 @@ The goal of **Load all services with convention strategy** is to provide develop
 }
 ```
 
+### Service Descriptions
+
+The Service Description object has the following properties
+
+| Name | Type | Is Mandatory | Description | Example | Notes |
+| ---  | ---  | ---          | ---         | ---     | ---   |
+| ServiceName | string | false | The name to use to reference this service | MyServiceName | If this property is provided, the service can be referenced from a [Reference](#references) object
+| ServiceType | string | true | The full name of the service type | ZapInjector.Abstractions.INameAbstraction, ZapInjector.Abstractions |
+| ImplementationType | string | false | The full name of the implementation type | ZapInjector.Implementations.NameImplementation, ZapInjector.Implementations | Only one of ImplementationType and ImplementationFactory can be provided
+| ImplementationFactory | [Factory](#factories) | false | The factory which creates the implementation instance |  | Only one of ImplementationType and ImplementationFactory can be provided
+| Dependencies | Array of [Parameter](#parameters) | false | The service dependencies that will be provided from the configuration instead of from the service provider |  |
+| OnAfterCreate | Array of [MethodCall](#method-calls) | false | Methods to be called on the implementation instance after it's created |
+| ServiceLifetime | string | false | The service lifetime. The allowed values are `Singleton`, `Scoped` and `Transient`. The default value is `Scoped`. | Scoped | |
+
+
+### Parameters
+
+### Values
+
+### References
+
+### Factories
+
+### Method Calls
+
+## Future Improvements
+
 ## Contributing
 
 The Contributing guide can be found [here](https://github.com/like-a-charm/zapinjector/tree/main/Contributing.md)
