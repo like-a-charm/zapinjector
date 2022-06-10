@@ -40,7 +40,7 @@ PM> Install-Package ZapInjector
 When you install the package, it should be added to your _csproj_ file. Alternatively, you can add it directly by adding:
 
 ```xml
-<PackageReference Include="ZapInjector" Version="1.0.1" />
+<PackageReference Include="ZapInjector" Version="1.0.2" />
 ```
 
 Define your configuration in the application.json or in the application.yaml files as done in [this example](https://github.com/like-a-charm/zapinjector/tree/main/examples/ZapInjector.Examples.Main)
@@ -201,3 +201,7 @@ The Contributing guide can be found [here](https://github.com/like-a-charm/zapin
 
 ## Authors
  - [Daniele De Francesco](https://github.com/danieledefrancesco)
+
+
+<meta name="google-site-verification" content="tlDU5aubLJP35vfWNBN7r2mZttTe6-RDxWoNNK90dk4" />
+<meta name="google-site-verification" content="kNyIwbDfMm4yRe9G8ERQIFn1V4jYhHzgHiF8DWXhn-Y" />
