@@ -148,9 +148,31 @@ The Service Description object has the following properties
 
 ### Parameters
 
+The Parameter object has the following properties
+
+| Name | Type | Is Mandatory | Description | Example | Notes |
+| ---  | ---  | ---          | ---         | ---     | ---   |
+| Reference | [Reference](#references) | false | The Reference object | | Only one of Reference, ServiceDescription and Value can be provided |
+| ServiceDescription | [ServiceDescription](#services-descriptions) | false | The ServiceDescription object | Only one of Reference, ServiceDescription and Value can be provided |
+| Value | [Value](#values) | false | The Value object | Only one of Reference, ServiceDescription and Value can be provided |
+
 ### Values
 
+The Value object has the following properties
+
+| Name | Type | Is Mandatory | Description | Example | Notes |
+| ---  | ---  | ---          | ---         | ---     | ---   |
+| Name | string | false | The name to use to reference this value | MyValueName | If this property is provided, the value can be referenced from a [Reference](#references) object
+| Type | string | true | The name of the type of the value | System.String | Only primitive types are supported |
+| Value | string | true | The value | MY_STRING | It can be a string like `MY_STRING` or it can reference an environment variable using `env(ENVIRONMENT_VARIABLE_NAME)` 
+
 ### References
+
+The Reference object has the following properties
+
+| Name | Type | Is Mandatory | Description | Example | Notes |
+| ---  | ---  | ---          | ---         | ---     | ---   |
+| Name | string | true | The name of the referenced ServiceDescription or Value object | MyReferenceName | 
 
 ### Factories
 
