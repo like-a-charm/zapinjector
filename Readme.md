@@ -25,7 +25,6 @@ ZapInjector solves some problems that are commonly faced when using the default 
    4. [References](#references)
    5. [Factories](#factories)
    6. [Method Calls](#method-calls)
-6. [Future Improvements](#future-improvements)
 7. [Contributing](#contributing)
 
 ## Installation
@@ -138,8 +137,8 @@ The Service Description object has the following properties
 | Name | Type | Is Mandatory | Description | Example | Notes |
 | ---  | ---  | ---          | ---         | ---     | ---   |
 | ServiceName | string | false | The name to use to reference this service | MyServiceName | If this property is provided, the service can be referenced from a [Reference](#references) object
-| ServiceType | string | true | The full name of the service type | ZapInjector.Abstractions.INameAbstraction, ZapInjector.Abstractions |
-| ImplementationType | string | false | The full name of the implementation type | ZapInjector.Implementations.NameImplementation, ZapInjector.Implementations | Only one of ImplementationType and ImplementationFactory can be provided
+| ServiceType | string | true | The full name of the service type | ZapInjector.Examples.Abstractions.INameAbstraction, ZapInjector.Examples.Abstractions |
+| ImplementationType | string | false | The full name of the implementation type | ZapInjector.Examples.Implementations.NameImplementation, ZapInjector.Examples.Implementations | Only one of ImplementationType and ImplementationFactory can be provided
 | ImplementationFactory | [Factory](#factories) | false | The factory which creates the implementation instance |  | Only one of ImplementationType and ImplementationFactory can be provided
 | Dependencies | Array of [Parameter](#parameters) | false | The service dependencies that will be provided from the configuration instead of from the service provider |  |
 | OnAfterCreate | Array of [MethodCall](#method-calls) | false | Methods to be called on the implementation instance after it's created |
@@ -176,9 +175,25 @@ The Reference object has the following properties
 
 ### Factories
 
+The Factory object has the following properties
+
+| Name | Type | Is Mandatory | Description | Example | Notes |
+| ---  | ---  | ---          | ---         | ---     | ---   |
+| StaticReference | string | false | The full name of the type on which method will be called as a static method | ZapInjector.Examples.ImplementationsTwo.NameImplementationFour, ZapInjector.Examples.ImplementationsTwo | Use this property if the factory method is a static method. Only one of StaticReference and DynamicReference can be provided
+| DynamicReference | [Parameter](#parameters) | false | The parameter referring to the object instance on which the method will be called as an instance method | | Use this property if the factory method is an instance method. Only one of StaticReference and DynamicReference can be provided |
+| Method | [Method Call](#method-calls) | true | The factory method | |
+| InstanceType | string | false | The full name of the instance returned by the factory method | ZapInjector.Examples.Implementations.NameImplementation, ZapInjector.Examples.Implementations | 
+
+
 ### Method Calls
 
-## Future Improvements
+The Method Call object has the following properties
+
+| Name | Type | Is Mandatory | Description | Example | Notes |
+| ---  | ---  | ---          | ---         | ---     | ---   |
+| MethodName | string | true | The name of the method to call | Create | |
+| Parameters | Array of [Parameter](#parameters) | false | The method arguments | | |
+
 
 ## Contributing
 
